@@ -21,6 +21,7 @@
     background: #111;
     color: #fff;
     z-index: 2;
+    transition: 0.5s;
 
 }
 .video_slide_show.toggle.active{
@@ -62,7 +63,6 @@
     background:var(--overlay-color);
     mix-blend-mode: overlay;
     /* background: rgba(0, 0, 0, 0.5);  backgraund color for pop the video*/
-   
 }
 .text{
     position: relative;

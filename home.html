@@ -44,9 +44,12 @@
     </div>
     <script>
         const menutoggle=document.querySelector('.toggle')
-        const showcase = document.querySelector('.video_slide_show')
+        const video_slide_show = document.querySelector('.video_slide_show')
 
-        menutoggle
+        menutoggle.addEventListener('click',() => {
+            menutoggle.classList.toggle('active')
+            video_slide_show.classList.toggle('active')
+        })
     </script>
 </body>
 </html>
