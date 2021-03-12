@@ -8,12 +8,12 @@
     <title>Capture moments Ltd</title>
 </head>
 <body>
-    <!--section class="video_slide_show"-->
-    <section class="video_slide_show">
+    <!--section class="video_slide_show active"-->
+    <section class="video_slide_show ">
         <header>
             <h2 class="logo">Sony @6400</h2>
             <!--div class="toggle active"></div-->
-            <div class="toggle"></div>
+            <div class="toggle "></div>
         </header>
         <video src="wedd.mp4" muted loop autoplay></video>
 
@@ -26,7 +26,7 @@
         <ul class="social">
             <li> <a href="#"><img src="facebook.png" alt="" style="max-height: 30px;  max-width:30px";/></a></li>
             <li> <a href="#"><img src="insta.png" alt="" style=" max-height: 30px; max-width: 30px";/></a> </li>
-            <li> <a href="#"><img src="youtube.png" alt="" style="max-height: 30px; max-width: 30px";/></a> </li>
+            <li> <a href="http://youtube.com"><img src="youtube.png" alt="" style="max-height: 30px; max-width: 30px";/></a> </li>
         </ul>
     </section>
     <div class="menu">
@@ -37,14 +37,14 @@
             <li><a href="#">Documentory</a></li>
             <li><a href="#">Tech cover</a></li>
             <li><a href="#">Advertisement</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">About us</a></li>        
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>        
         
         </ul>
     </div>
-    <script>
-        let menuToggle=document.querySelector('.toggle');
-        let video_slide_show = document.querySelector('.video_slide_show');
+    <script type="text/javascript">
+        const menuToggle=document.querySelector('.toggle');
+        const video_slide_show = document.querySelector('.video_slide_show');
 
         menuToggle.addEventListener('click',() => {
             menuToggle.classList.toggle('active');
