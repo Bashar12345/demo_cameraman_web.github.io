@@ -10,7 +10,7 @@
 <body>
     <!--section class="video_slide_show"-->
     <section class="video_slide_show">
-        <header >
+        <header>
             <h2 class="logo">Sony @6400</h2>
             <!--div class="toggle active"></div-->
             <div class="toggle"></div>
@@ -43,13 +43,13 @@
         </ul>
     </div>
     <script>
-        const menutoggle=document.querySelector('.toggle')
-        const video_slide_show = document.querySelector('.video_slide_show')
+        let menuToggle=document.querySelector('.toggle');
+        let video_slide_show = document.querySelector('.video_slide_show');
 
-        menutoggle.addEventListener('click',() => {
-            menutoggle.classList.toggle('active')
-            video_slide_show.classList.toggle('active')
-        })
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active');
+            video_slide_show.classList.toggle('active');
+        });
     </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Quicksand:wght@300&display=swap');
 
 :root{
     --overlay-color:#CCCC00;
@@ -7,26 +7,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Popins','Quicksand',sans-serif;
+    font-family: 'Poppins','Quicksand',sans-serif;
 }
 
-.video_slide_show{
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    background: #111;
-    color: #fff;
-    z-index: 2;
-    transition: 0.5s;
-
-}
-.video_slide_show.toggle.active{
-    right: 300px;
-}
 .video_slide_show header{
     position: absolute;
     top: 0;
@@ -37,8 +20,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
+.video_slide_show header .logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(menuu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+.toggle.active{
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+.video_slide_show{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 0.5s;
 
+}
+.video_slide_show.toggle.active{
+    right: 300px;
+}
 .video_slide_show video{
     position: absolute;
     top: 0;
@@ -47,13 +69,9 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
+}
 
 
-}
-.logo{
-    text-transform: uppercase;
-    cursor: pointer;
-}
 .overlay{
     position: absolute;
     top: 0;
@@ -69,18 +87,21 @@
     z-index: 10;
 }
 .text h2{
-    font-size: 4em;
-    font-weight: 700;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-.text h3{
     font-size: 5em;
     font-weight: 800;
     line-height: 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.text h3{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    color: #fff;
     text-transform: uppercase;
 }
 .text p{
+    color: #fff;
     font-size: 1.1em;
     margin: 20px 0;
     font-weight: 400;
@@ -92,9 +113,10 @@
     background: #fff;
     padding: 10px 30px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
     color: #111;
     margin-top: 10px;
-    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.2s;
 }
@@ -122,22 +144,7 @@
 .social li a:hover{
     transform: scale(0.5) translateY(-15px);
 }
-.toggle{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: url(menuu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-}
-.toggle.active{
-    background: url(close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-}
+
 .menu{
     position: absolute;
     top: 0;
@@ -150,9 +157,12 @@
 }
 .menu ul{
     position: relative;
-    list-style: none;
 }
-.menu ul li{
+.menu ul li
+{
+list-style: none;
+}
+.menu ul li a{
     text-decoration: none;
     font-size: 24px;
     color: #111;
@@ -162,8 +172,9 @@
     color: var(--overlay-color);
 
 }
-@media(max-width:800px){
-    .video_slide_show,.video_slide_show header{
+@media(max-width:790px){
+    .video_slide_show,
+    .video_slide_show header{
         padding: 40px;
     }
     .text h2{
