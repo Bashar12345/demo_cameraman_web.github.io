@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <title>Capture moments Ltd</title>
+    </head>
+    <body class="page">
+        <section class="l-container">
+            Allah
+            <body>
+
+                <!-- Header -->
+                <div class="header">
+                    <h1>Responsive video Grid</h1>
+                    <p>Resize the browser window to see the responsive effect.</p>
+                </div>
+
+                <!-- Photo Grid -->
+                <div class="row">
+                    <div class="column">
+                        <img src="17352.jpg" style="width:100%">
+                        <img src="17370.jpg" style="width:100%">
+                        <img src="17377.jpg" style="width:100%">
+                        <img src="17352.jpg" style="width:100%">
+                        <img src="17377.jpg" style="width:100%">
+                        <img src="17370.jpg" style="width:100%">
+                        <img src="17352.jpg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <video class="columnVideo" src="video.mp4" ></video>
+                        <video class="columnVideo" src="documentory.mp4" ></video>
+                        <video class="columnVideo" src="production ID 4593046.mp4" ></video>
+                        <video class="columnVideo" src="pexels-ivan-samkov-6270942.mp4" ></video>
+                        <video class="columnVideo" src="production ID 4312257.mp4" ></video>
+
+                    </div>
+                    <div class="column">
+                        <img src="17412.jpg" style="width:100%">
+                        <img src="17400.jpg" style="width:100%">
+                        <video class="columnVideo" src="production ID 4124198.mp4" ></video>
+                        <video class="columnVideo" src="pexels-polina-tankilevitch-5255962.mp4" ></video>
+                        <video class="columnVideo" src="production ID 4593046.mp4" ></video>
+                        <video class="columnVideo" src="pexels-ivan-samkov-6270942.mp4" ></video>
+                        
+
+                    </div>
+                    <div class="column">
+                        <video class="columnVideo" src="pexels-ivan-samkov-6270942.mp4" ></video>
+                        <video class="columnVideo" src="video(1).mp4" ></video>
+                        <video class="columnVideo" src="video(2).mp4" ></video>
+                        <video class="columnVideo" src="production ID 4819172.mp4" ></video>
+
+                            </div>
+                        </div>
+    <script type="text/javascript">
+$(document).ready(function() {
+$(".columnVideo").on("mouseover", function(event) {
+    this.play();
+
+}).on('mouseout', function(event) {
+    this.pause();
+
+});
+})
+    </script>
+
+
+    </body>
+</html>
